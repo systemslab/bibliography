@@ -2,7 +2,7 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for Carlos Maltzahn at 2020-02-16 09:44:02 -0800 
+%% Created for Carlos Maltzahn at 2020-02-23 14:03:09 -0800 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
@@ -1050,6 +1050,43 @@
 
 @string{www99 = {Proceedings of the 8th International World Wide Web Conference}}
 
+
+@book{soukup:springer14,
+	Author = {Jiri Soukup and Petr Mach{\'a}{\v c}ek},
+	Date-Added = {2020-02-23 13:48:27 -0800},
+	Date-Modified = {2020-02-23 14:01:32 -0800},
+	Keywords = {book, programming, structured, datamanagement, storage},
+	Publisher = {Springer},
+	Title = {Serialization and Persistent Objects},
+	Year = {2014},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxAXUy9zb3VrdXAtc3ByaW5nZXIxNC5wZGZPEQF0AAAAAAF0AAIAAAxHb29nbGUgRHJpdmUAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8Vc291a3VwLXNwcmluZ2VyMTQucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAAABAAMAAAoAY3UAAAAAAAAAAAAAAAAAAVMAAAIAPS86Vm9sdW1lczpHb29nbGVEcml2ZTpNeSBEcml2ZTpQYXBlcnM6Uzpzb3VrdXAtc3ByaW5nZXIxNC5wZGYAAA4ALAAVAHMAbwB1AGsAdQBwAC0AcwBwAHIAaQBuAGcAZQByADEANAAuAHAAZABmAA8AGgAMAEcAbwBvAGcAbABlACAARAByAGkAdgBlABIAKC9NeSBEcml2ZS9QYXBlcnMvUy9zb3VrdXAtc3ByaW5nZXIxNC5wZGYAEwAUL1ZvbHVtZXMvR29vZ2xlRHJpdmX//wAAAAgADQAaACQAPgAAAAAAAAIBAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAG2}}
+
+@phdthesis{sivathanu:phdthesis08,
+	Abstract = {Modern computer systems are a composition of several logically independent layers. From a very simple hardware-software layering in early days, this layering in computer systems has increased significantly over time in both its depth and complexity. For example, in the past, file systems communicated directly with the disk hardware, whereas today layers such as logical volume managers, RAID, or even a network can exist in between. Although providing many important benefits, this rampant layering has also led to the well-explored problem of information-divide in the systems stack. Layers hide information, thus constraining functionality and limiting the power of individual layers. A particularly striking instance of this general problem exists in the storage stack today. Modern high-end storage systems have significant processing capabilities, but despite their potential, storage systems are constrained in their functionality because they are oblivious of knowledge about higher layers such as the applications using them.
+In this thesis proposal, we seek to answer a simple question: how can we convey application-level information across the diverse modern storage stack in a simple and generic manner? We propose two flexible abstractions to solve this problem. The first abstraction we present is the notion of type-awareness in the storage stack. In type-aware storage, lower layers of the storage stack such as the disk are aware of the pointer relationships between disk blocks that are imposed by higher layers such as the file system. Type-awareness enables semantics-aware optimizations in the lower layers of the storage stack, and also active enforcement of invariants on data access based on the pointer relationships, resulting in better security and integrity. The second abstraction we evolve is Context-Aware I/O (CAIO), a generic mechanism to propagate information end-to-end through the storage stack. CAIO provides a simple, yet effective interface to communicate application-data and application-I/O relationships to the storage stack, enabling interesting functionality.
+Through several case studies, we demonstrate the flexibility and benefits of both abstractions and show that they present a simple yet effective general interface to build the next generation of storage systems.},
+	Address = {Brookhaven, NY},
+	Author = {Gopalan Sivathanu},
+	Date-Added = {2020-02-23 13:31:17 -0800},
+	Date-Modified = {2020-02-23 13:55:14 -0800},
+	Keywords = {phdthesis, storage, abstraction, programmable},
+	Month = {May},
+	School = {Stony Brook University},
+	Title = {End-to-End Abstractions for Application-Aware Storage},
+	Type = {Ph.D.~dissertation},
+	Year = {2008},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxAbUy9zaXZhdGhhbnUtcGhkdGhlc2lzMDgucGRmTxEBhAAAAAABhAACAAAMR29vZ2xlIERyaXZlAAAAAAAAAAAAAAAAAAAAAAAAAEJEAAH/////GXNpdmF0aGFudS1waGR0aGVzaXMwOC5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////8AAAAAAAAAAAAAAAAAAQADAAAKAGN1AAAAAAAAAAAAAAAAAAFTAAACAEEvOlZvbHVtZXM6R29vZ2xlRHJpdmU6TXkgRHJpdmU6UGFwZXJzOlM6c2l2YXRoYW51LXBoZHRoZXNpczA4LnBkZgAADgA0ABkAcwBpAHYAYQB0AGgAYQBuAHUALQBwAGgAZAB0AGgAZQBzAGkAcwAwADgALgBwAGQAZgAPABoADABHAG8AbwBnAGwAZQAgAEQAcgBpAHYAZQASACwvTXkgRHJpdmUvUGFwZXJzL1Mvc2l2YXRoYW51LXBoZHRoZXNpczA4LnBkZgATABQvVm9sdW1lcy9Hb29nbGVEcml2Zf//AAAACAANABoAJABCAAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAAco=}}
+
+@unpublished{stammer:451research19,
+	Author = {Tim Stammers},
+	Date-Added = {2020-02-21 00:59:55 -0800},
+	Date-Modified = {2020-02-21 01:06:47 -0800},
+	Keywords = {shortpaper, programmable, storage},
+	Month = {March 4},
+	Note = {451 Research Report},
+	Title = {Work smarter, work faster: Move the processing, not the data},
+	Year = {2019},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxAbUy9zdGFtbWVyLTQ1MXJlc2VhcmNoMTkucGRmTxEBhAAAAAABhAACAAAMR29vZ2xlIERyaXZlAAAAAAAAAAAAAAAAAAAAAAAAAEJEAAH/////GXN0YW1tZXItNDUxcmVzZWFyY2gxOS5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////8AAAAAAAAAAAAAAAAAAQADAAAKAGN1AAAAAAAAAAAAAAAAAAFTAAACAEEvOlZvbHVtZXM6R29vZ2xlRHJpdmU6TXkgRHJpdmU6UGFwZXJzOlM6c3RhbW1lci00NTFyZXNlYXJjaDE5LnBkZgAADgA0ABkAcwB0AGEAbQBtAGUAcgAtADQANQAxAHIAZQBzAGUAYQByAGMAaAAxADkALgBwAGQAZgAPABoADABHAG8AbwBnAGwAZQAgAEQAcgBpAHYAZQASACwvTXkgRHJpdmUvUGFwZXJzL1Mvc3RhbW1lci00NTFyZXNlYXJjaDE5LnBkZgATABQvVm9sdW1lcy9Hb29nbGVEcml2Zf//AAAACAANABoAJABCAAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAAco=}}
 
 @inproceedings{aghayev:sosp19,
 	Address = {Huntsville, ON, Canada},
