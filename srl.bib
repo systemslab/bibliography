@@ -2,7 +2,7 @@
 %% http://bibdesk.sourceforge.net/
 
 
-%% Created for Carlos Maltzahn at 2020-06-01 12:30:58 -0700 
+%% Created for Carlos Maltzahn at 2020-08-11 10:58:49 -0700 
 
 
 %% Saved with string encoding Unicode (UTF-8) 
@@ -1051,6 +1051,56 @@
 @string{www99 = {Proceedings of the 8th International World Wide Web Conference}}
 
 
+@article{sze:ieee17,
+	Author = {Vivienne Sze and Yu-Hsin Chen and Tien-Ju Yang and Joel S. Emer},
+	Date-Added = {2020-08-11 10:51:07 -0700},
+	Date-Modified = {2020-08-11 10:56:40 -0700},
+	Journal = {Proceedings of the IEEE},
+	Keywords = {papers, machinelearning, deeplearning, tutorial},
+	Month = {December},
+	Number = {12},
+	Pages = {2295--2329},
+	Title = {Efficient Processing of Deep Neural Networks: A Tutorial and Survey},
+	Volume = {105},
+	Year = {2017},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxAQUy9zemUtaWVlZTE3LnBkZk8RAVgAAAAAAVgAAgAADEdvb2dsZSBEcml2ZQAAAAAAAAAAAAAAAAAAAAAAAABCRAAB/////w5zemUtaWVlZTE3LnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////AAAAAAAAAAAAAAAAAAEAAwAACgBjdQAAAAAAAAAAAAAAAAABUwAAAgA2LzpWb2x1bWVzOkdvb2dsZURyaXZlOk15IERyaXZlOlBhcGVyczpTOnN6ZS1pZWVlMTcucGRmAA4AHgAOAHMAegBlAC0AaQBlAGUAZQAxADcALgBwAGQAZgAPABoADABHAG8AbwBnAGwAZQAgAEQAcgBpAHYAZQASACEvTXkgRHJpdmUvUGFwZXJzL1Mvc3plLWllZWUxNy5wZGYAABMAFC9Wb2x1bWVzL0dvb2dsZURyaXZl//8AAAAIAA0AGgAkADcAAAAAAAACAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAABkw==}}
+
+@inproceedings{chu:chep19,
+	Abstract = {Access libraries such as ROOT and HDF5 allow users to interact with datasets using high level abstractions, like coordinate systems and associated slicing operations. Unfortunately, the implementations of access libraries are based on outdated assumptions about storage systems interfaces and are generally unable to fully benefit from modern fast storage devices. For example, access libraries often implement buffering and data layout that assume that large, single-threaded sequential access patterns are causing less overall latency than small parallel random access: while this is true for spinning media, it is not true for flash media. The situation is getting worse with rapidly evolving storage devices such as non-volatile memory and ever larger datasets. Our Skyhook Dataset Mapping project explores distributed dataset mapping infrastructures that can integrate and scale out existing access libraries using Ceph's extensible object model, avoiding reimplementation or even modifications of these access libraries as much as possible. These programmable storage extensions coupled with our distributed dataset mapping techniques enable: 1) access library operations to be offloaded to storage system servers, 2) the independent evolution of access libraries and storage systems and 3) fully leveraging of the existing load balancing, elasticity, and failure management of distributed storage systems like Ceph. They also create more opportunities to conduct storage server-local optimizations specific to storage servers. For example, storage servers might include local key/value stores combined with chunk stores that require different optimizations than a local file system. As storage servers evolve to support new storage devices like non-volatile memory, these server-local optimizations can be implemented while minimizing disruptions to applications. We will report progress on the means by which distributed dataset mapping can be abstracted over particular access libraries, including access libraries for ROOT data, and how we address some of the challenges revolving around data partitioning and composability of access operations.},
+	Address = {Adelaide, Australia},
+	Author = {Aaron Chu and Jeff LeFevre and Carlos Maltzahn and Aldrin Montana and Peter Alvaro and Dana Robinson and Quincey Koziol},
+	Booktitle = {24th International Conference on Computing in High Energy \& Nuclear Physics)},
+	Date-Added = {2020-07-30 14:14:29 -0700},
+	Date-Modified = {2020-07-30 14:14:29 -0700},
+	Keywords = {papers, programmable, declarative, objectstorage, nsf1836650},
+	Month = {November 4-8},
+	Publisher = {arXiv:2007.01789v1 (Submitted for publication)},
+	Title = {SkyhookDM: Mapping Scientific Datasets to Programmable Storage},
+	Year = {2019},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxAQQy9jaHUtY2hlcDE5LnBkZk8RAVgAAAAAAVgAAgAADEdvb2dsZSBEcml2ZQAAAAAAAAAAAAAAAAAAAAAAAABCRAAB/////w5jaHUtY2hlcDE5LnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////AAAAAAAAAAAAAAAAAAEAAwAACgBjdQAAAAAAAAAAAAAAAAABQwAAAgA2LzpWb2x1bWVzOkdvb2dsZURyaXZlOk15IERyaXZlOlBhcGVyczpDOmNodS1jaGVwMTkucGRmAA4AHgAOAGMAaAB1AC0AYwBoAGUAcAAxADkALgBwAGQAZgAPABoADABHAG8AbwBnAGwAZQAgAEQAcgBpAHYAZQASACEvTXkgRHJpdmUvUGFwZXJzL0MvY2h1LWNoZXAxOS5wZGYAABMAFC9Wb2x1bWVzL0dvb2dsZURyaXZl//8AAAAIAA0AGgAkADcAAAAAAAACAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAABkw==},
+	Bdsk-File-2 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxAXQy9jaHUtY2hlcDE5LXNsaWRlcy5wZGZPEQF0AAAAAAF0AAIAAAxHb29nbGUgRHJpdmUAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8VY2h1LWNoZXAxOS1zbGlkZXMucGRmAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAAABAAMAAAoAY3UAAAAAAAAAAAAAAAAAAUMAAAIAPS86Vm9sdW1lczpHb29nbGVEcml2ZTpNeSBEcml2ZTpQYXBlcnM6QzpjaHUtY2hlcDE5LXNsaWRlcy5wZGYAAA4ALAAVAGMAaAB1AC0AYwBoAGUAcAAxADkALQBzAGwAaQBkAGUAcwAuAHAAZABmAA8AGgAMAEcAbwBvAGcAbABlACAARAByAGkAdgBlABIAKC9NeSBEcml2ZS9QYXBlcnMvQy9jaHUtY2hlcDE5LXNsaWRlcy5wZGYAEwAUL1ZvbHVtZXMvR29vZ2xlRHJpdmX//wAAAAgADQAaACQAPgAAAAAAAAIBAAAAAAAAAAUAAAAAAAAAAAAAAAAAAAG2},
+	Bdsk-Url-1 = {https://indico.cern.ch/event/773049/contributions/3474413/}}
+
+@unpublished{cross:osre20,
+	Author = {CROSS},
+	Date-Added = {2020-07-30 13:34:57 -0700},
+	Date-Modified = {2020-07-30 13:36:11 -0700},
+	Note = {Web Page. cross.ucsc.edu/programs/summerprogram2020.html},
+	Title = {Open Source Research Experience},
+	Year = {2020}}
+
+@article{lefevre:login20,
+	Author = {Jeff LeFevre and Carlos Maltzahn},
+	Date-Added = {2020-06-12 18:32:53 -0700},
+	Date-Modified = {2020-06-12 18:35:22 -0700},
+	Journal = {USENIX ;login:},
+	Keywords = {papers, programmable, storage, ceph, physicaldesign},
+	Number = {2},
+	Title = {SkyhookDM: Data Processing in Ceph with Programmable Storage},
+	Volume = {45},
+	Year = {2020},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxAVTC9sZWZldnJlLWxvZ2luMjAucGRmTxEBbAAAAAABbAACAAAMR29vZ2xlIERyaXZlAAAAAAAAAAAAAAAAAAAAAAAAAEJEAAH/////E2xlZmV2cmUtbG9naW4yMC5wZGYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP////8AAAAAAAAAAAAAAAAAAQADAAAKAGN1AAAAAAAAAAAAAAAAAAFMAAACADsvOlZvbHVtZXM6R29vZ2xlRHJpdmU6TXkgRHJpdmU6UGFwZXJzOkw6bGVmZXZyZS1sb2dpbjIwLnBkZgAADgAoABMAbABlAGYAZQB2AHIAZQAtAGwAbwBnAGkAbgAyADAALgBwAGQAZgAPABoADABHAG8AbwBnAGwAZQAgAEQAcgBpAHYAZQASACYvTXkgRHJpdmUvUGFwZXJzL0wvbGVmZXZyZS1sb2dpbjIwLnBkZgATABQvVm9sdW1lcy9Hb29nbGVEcml2Zf//AAAACAANABoAJAA8AAAAAAAAAgEAAAAAAAAABQAAAAAAAAAAAAAAAAAAAaw=}}
+
 @mastersthesis{rawal:msthesis20,
 	Address = {Chicago, IL},
 	Author = {Arjun Rawal},
@@ -1259,7 +1309,8 @@
 	Keywords = {papers, edge, reliability, disaggregation, embedded, failures},
 	Month = {July 14},
 	Title = {Scale-out Edge Storage Systems with Embedded Storage Nodes to Get Better Availability and Cost-Efficiency At the Same Time},
-	Year = {2020}}
+	Year = {2020},
+	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxATTC9saXUtaG90ZWRnZTIwLnBkZk8RAWQAAAAAAWQAAgAADEdvb2dsZSBEcml2ZQAAAAAAAAAAAAAAAAAAAAAAAABCRAAB/////xFsaXUtaG90ZWRnZTIwLnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////AAAAAAAAAAAAAAAAAAEAAwAACgBjdQAAAAAAAAAAAAAAAAABTAAAAgA5LzpWb2x1bWVzOkdvb2dsZURyaXZlOk15IERyaXZlOlBhcGVyczpMOmxpdS1ob3RlZGdlMjAucGRmAAAOACQAEQBsAGkAdQAtAGgAbwB0AGUAZABnAGUAMgAwAC4AcABkAGYADwAaAAwARwBvAG8AZwBsAGUAIABEAHIAaQB2AGUAEgAkL015IERyaXZlL1BhcGVycy9ML2xpdS1ob3RlZGdlMjAucGRmABMAFC9Wb2x1bWVzL0dvb2dsZURyaXZl//8AAAAIAA0AGgAkADoAAAAAAAACAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAABog==}}
 
 @inproceedings{cardelli:popl95,
 	Address = {San Francisco, CA},
@@ -1563,19 +1614,6 @@ Through several case studies, we demonstrate the flexibility and benefits of bot
 	Year = {2019},
 	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxAUWC1aL3poYW5nLXNvY2MxOS5wZGZPEQFmAAAAAAFmAAIAAAxHb29nbGUgRHJpdmUAAAAAAAAAAAAAAAAAAAAAAAAAQkQAAf////8Qemhhbmctc29jYzE5LnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/////wAAAAAAAAAAAAAAAAABAAMAAAoAY3UAAAAAAAAAAAAAAAAAA1gtWgAAAgA6LzpWb2x1bWVzOkdvb2dsZURyaXZlOk15IERyaXZlOlBhcGVyczpYLVo6emhhbmctc29jYzE5LnBkZgAOACIAEAB6AGgAYQBuAGcALQBzAG8AYwBjADEAOQAuAHAAZABmAA8AGgAMAEcAbwBvAGcAbABlACAARAByAGkAdgBlABIAJS9NeSBEcml2ZS9QYXBlcnMvWC1aL3poYW5nLXNvY2MxOS5wZGYAABMAFC9Wb2x1bWVzL0dvb2dsZURyaXZl//8AAAAIAA0AGgAkADsAAAAAAAACAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAABpQ==},
 	Bdsk-Url-1 = {https://blog.acolyer.org/2020/01/29/narrowing-the-gap/}}
-
-@inproceedings{chu:chep19,
-	Abstract = {Access libraries such as ROOT and HDF5 allow users to interact with datasets using high level abstractions, like coordinate systems and associated slicing operations. Unfortunately, the implementations of access libraries are based on outdated assumptions about storage systems interfaces and are generally unable to fully benefit from modern fast storage devices. For example, access libraries often implement buffering and data layout that assume that large, single-threaded sequential access patterns are causing less overall latency than small parallel random access: while this is true for spinning media, it is not true for flash media. The situation is getting worse with rapidly evolving storage devices such as non-volatile memory and ever larger datasets. Our Skyhook Dataset Mapping project explores distributed dataset mapping infrastructures that can integrate and scale out existing access libraries using Ceph's extensible object model, avoiding reimplementation or even modifications of these access libraries as much as possible. These programmable storage extensions coupled with our distributed dataset mapping techniques enable: 1) access library operations to be offloaded to storage system servers, 2) the independent evolution of access libraries and storage systems and 3) fully leveraging of the existing load balancing, elasticity, and failure management of distributed storage systems like Ceph. They also create more opportunities to conduct storage server-local optimizations specific to storage servers. For example, storage servers might include local key/value stores combined with chunk stores that require different optimizations than a local file system. As storage servers evolve to support new storage devices like non-volatile memory, these server-local optimizations can be implemented while minimizing disruptions to applications. We will report progress on the means by which distributed dataset mapping can be abstracted over particular access libraries, including access libraries for ROOT data, and how we address some of the challenges revolving around data partitioning and composability of access operations.},
-	Address = {Adelaide, Australia},
-	Author = {Aaron Chu and Jeff LeFevre and Carlos Maltzahn and Aldrin Montana and Peter Alvaro and Dana Robinson and Quincey Koziol},
-	Booktitle = {24th International Conference on Computing in High Energy \& Nuclear Physics},
-	Date-Added = {2020-01-20 16:14:13 -0800},
-	Date-Modified = {2020-01-20 16:44:28 -0800},
-	Keywords = {papers, programmable, declarative, objectstorage},
-	Month = {November 4-8},
-	Title = {SkyhookDM: Mapping Scientific Datasets to Programmable Storage},
-	Year = {2019},
-	Bdsk-File-1 = {YnBsaXN0MDDSAQIDBFxyZWxhdGl2ZVBhdGhZYWxpYXNEYXRhXxAQQy9jaHUtY2hlcDE5LnBkZk8RAVgAAAAAAVgAAgAADEdvb2dsZSBEcml2ZQAAAAAAAAAAAAAAAAAAAAAAAABCRAAB/////w5jaHUtY2hlcDE5LnBkZgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD/////AAAAAAAAAAAAAAAAAAEAAwAACgBjdQAAAAAAAAAAAAAAAAABQwAAAgA2LzpWb2x1bWVzOkdvb2dsZURyaXZlOk15IERyaXZlOlBhcGVyczpDOmNodS1jaGVwMTkucGRmAA4AHgAOAGMAaAB1AC0AYwBoAGUAcAAxADkALgBwAGQAZgAPABoADABHAG8AbwBnAGwAZQAgAEQAcgBpAHYAZQASACEvTXkgRHJpdmUvUGFwZXJzL0MvY2h1LWNoZXAxOS5wZGYAABMAFC9Wb2x1bWVzL0dvb2dsZURyaXZl//8AAAAIAA0AGgAkADcAAAAAAAACAQAAAAAAAAAFAAAAAAAAAAAAAAAAAAABkw==}}
 
 @inproceedings{weil:lsf07,
 	Address = {San Jose, CA},
